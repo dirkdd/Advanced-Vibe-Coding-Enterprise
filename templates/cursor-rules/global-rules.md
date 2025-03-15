@@ -1,0 +1,22 @@
+# Global Cursor Rules
+
+Description: Enterprise-wide standards for code quality and development
+Globs: /**/*
+
+Body:
+  - Follow consistent naming conventions: kebab-case for files/folders, PascalCase for classes, camelCase for functions
+  - Always include detailed JSDoc or equivalent comments for all public functions, classes, and interfaces
+  - Ensure every file has a descriptive header comment explaining its purpose
+  - Include error handling for all user inputs and external API calls
+  - Follow established project architecture patterns when generating new code
+  - Reference existing code patterns from similar components before creating new ones
+  - Prioritize readability and maintainability over clever or concise code
+  - When generating code, include relevant unit tests that cover edge cases
+  - Use TypeScript interfaces over types when defining data contracts
+  - Implement proper logging throughout the application for debugging
+
+# Related Templates
+- See `/templates/cursor-rules/project-specific-rules.mdc` for project-level customization
+- See `.cursor/rules/environment.mdc` for environment-specific configurations
+- See `.cursor/rules/token-optimization.mdc` for token usage optimization
+

@@ -1,0 +1,31 @@
+# Token Optimization Rules
+
+Description: Guidelines for efficient token usage
+Globs: /**/*
+
+Body:
+  # Context management
+  - Break long prompts into focused, task-specific requests
+  - Prioritize relevant files in context (@file) references
+  - Use @folders instead of individual @file references when appropriate
+  - Clear conversation context when switching major tasks
+  
+  # Model selection
+  - Use cursor-small model for simple refactoring tasks
+  - Use GPT-4o for complex architectural decisions and cross-file implementations
+  - Use Claude 3.5 Sonnet for documentation generation and context-heavy reasoning
+  
+  # File prioritization
+  - Prioritize these files for context preservation:
+    - Core configuration files (e.g., package.json, tsconfig.json)
+    - Main architecture components
+    - Currently active feature files
+  - Exclude these from context unless specifically needed:
+    - Test fixtures
+    - Generated files
+    - Third-party dependencies
+    - Large data files
+  
+  # Token monitoring
+  - Monitor context token usage and clear when approaching 80% of limit
+  - Periodically restart sessions for complex, long-running projects

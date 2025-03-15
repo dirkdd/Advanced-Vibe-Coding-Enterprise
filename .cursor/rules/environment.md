@@ -1,0 +1,26 @@
+# Environment Configuration Rules
+
+Description: Local development environment specifications
+Globs: /**/*
+
+Body:
+  # Environment details
+  - Current OS: [Windows/macOS/Linux]
+  - Shell: [PowerShell/Bash/Zsh]
+  - Node version: [version number]
+  - Package manager: [npm/yarn/pnpm]
+  
+  # Cross-platform considerations
+  - Always use cross-platform commands when possible
+  - Use path.join() instead of hardcoded path separators
+  - For file system operations, use proper path separators for the specified OS
+  
+  # Environment-specific commands
+  - For Windows PowerShell: Use New-Item for file/directory creation
+  - For macOS/Linux Bash: Use mkdir -p for directory creation
+  - Always provide cross-platform Node.js alternatives when possible
+  
+  # Environment variables
+  - Store sensitive values in environment variables
+  - Use proper syntax for accessing environment variables based on platform
+  - Document all required environment variables
