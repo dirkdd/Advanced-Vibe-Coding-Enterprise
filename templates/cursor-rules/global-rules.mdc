@@ -1,3 +1,13 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: Enterprise-wide standards for code quality and development
+globs: /**/*
+alwaysApply: false
+---
 # Global Cursor Rules
 
 Description: Enterprise-wide standards for code quality and development
@@ -16,7 +26,8 @@ Body:
   - Implement proper logging throughout the application for debugging
 
 # Related Templates
-- See `/templates/cursor-rules/project-specific-rules.mdc` for project-level customization
+- See `templates/cursor-rules/project-specific-rules.mdc` for project-level customization
 - See `.cursor/rules/environment.mdc` for environment-specific configurations
 - See `.cursor/rules/token-optimization.mdc` for token usage optimization
+- See `.cursor/rules/error-handling.mdc` for error recovery protocols
 

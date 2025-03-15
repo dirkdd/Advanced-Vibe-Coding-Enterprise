@@ -101,6 +101,8 @@ Global Cursor Rules can be found in the `/templates/cursor-rules/global-rules.md
 
 Environment-specific rules can be found in `.cursor/rules/environment.mdc`, which should be customized for your local development environment to prevent environment-related errors.
 
+For guidance on evolving and maintaining cursor rules as your project grows, refer to `documentation/cursor-rules-evolution.md`. This document outlines strategies for adapting rules across the project lifecycle, from initial setup to mature systems.
+
 ### Error Mitigation Protocol
 
 Implement rules for handling environment-specific errors to optimize token usage and prevent repeated failures:

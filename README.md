@@ -13,31 +13,39 @@ This repository serves as a foundational resource to be attached as context when
 ```
 /advanced-vibe-coding-enterprise/
 ├── README.md
+├── CONTRIBUTING.md                  # Guidelines for contributors
+├── CHANGELOG.md                     # Version history and evolution
 ├── documentation/
-│   ├── Methodology.md
-│   ├── Prompt-Chain-Implementation.md
-│   └── source-prompt.md
+│   ├── methodology.md               # Core methodology documentation
+│   ├── prompt-chain-implementation.md # Implementation prompts sequence
+│   ├── source-prompt.md             # Original methodology prompt
+│   ├── cursor-rules-evolution.md    # Guide for maintaining rules over time
+│   └── getting-started.md           # Quick start guide with visual walkthrough
 ├── examples/
-│   └── .gitkeep
+│   ├── web-application-example/     # Example web application implementation
+│   │   ├── README.md                # Example project overview
+│   │   └── .cursor/                 # Project-specific cursor rules
+│   ├── backend-implementation-example.js # Backend code example
+│   └── terraform-module-example.tf  # Infrastructure-as-Code example
 ├── templates/
 │   ├── cursor-rules/
-│   │   ├── global-rules.mdc
-│   │   └── project-specific-rules.mdc
+│   │   ├── global-rules.mdc         # Workspace-wide rules template
+│   │   └── project-specific-rules.mdc # Project-level rules template
 │   └── documentation/
-│       ├── implementation-guide-template.md
-│       └── architecture-template.md
+│       ├── implementation-guide-template.md # Feature implementation template
+│       └── architecture-template.md # System architecture template
 └── .cursor/
     └── rules/
-        ├── environment.mdc
-        ├── token-optimization.mdc
-        └── error-handling.mdc
+        ├── environment.mdc          # Environment configuration rules
+        ├── token-optimization.mdc   # Token usage optimization rules
+        └── error-handling.mdc       # Error recovery protocols
 ```
 
 
 ### Directory Descriptions
 
 - **documentation/**: Contains core methodology documents and implementation guides
-- **examples/**: Reserved for future real-world implementations and case studies
+- **examples/**: Real-world implementations demonstrating the methodology in practice
 - **templates/**: Ready-to-use templates for cursor rules and project documentation
 - **.cursor/**: Actual cursor rules that can be used by the repository itself
 
@@ -54,6 +62,8 @@ This repository follows consistent naming conventions as outlined in the methodo
 
 ## Getting Started
 
+For a quick start guide with a visual walkthrough, see [documentation/getting-started.md](documentation/getting-started.md).
+
 ### Prerequisites
 
 - [Cursor AI](https://cursor.sh/) installed on your development machine
@@ -65,13 +75,13 @@ This repository follows consistent naming conventions as outlined in the methodo
 This repository provides ready-to-use templates to accelerate your development process:
 
 1. **Cursor Rules Templates**:
-   - Copy `/templates/cursor-rules/global-rules.mdc` to your project's `.cursor/rules.mdc` file
-   - Adapt `/templates/cursor-rules/project-specific-rules.mdc` for specific project components
+   - Copy `templates/cursor-rules/global-rules.mdc` to your project's `.cursor/rules.mdc` file
+   - Adapt `templates/cursor-rules/project-specific-rules.mdc` for specific project components
    - Implement environment-specific configurations using `.cursor/rules/environment.mdc`
 
 2. **Documentation Templates**:
-   - Use `/templates/documentation/implementation-guide-template.md` when implementing new features
-   - Create architecture documentation with `/templates/documentation/architecture-template.md`
+   - Use `templates/documentation/implementation-guide-template.md` when implementing new features
+   - Create architecture documentation with `templates/documentation/architecture-template.md`
 
 3. **Error Prevention**:
    - Implement token optimization strategies from `.cursor/rules/token-optimization.mdc`
@@ -86,8 +96,9 @@ This repository provides ready-to-use templates to accelerate your development p
 git clone https://github.com/dirkdd/advanced-vibe-coding-enterprise.git
 ```
 
-2. Familiarize yourself with the Methodology.md document to understand the core principles.
-3. When starting a new project, follow the Prompt Chain Implementation document, beginning with the Baseline Configuration prompts.
+2. Familiarize yourself with the `documentation/methodology.md` document to understand the core principles.
+3. When starting a new project, follow the `documentation/prompt-chain-implementation.md` document, beginning with the Baseline Configuration prompts.
+4. Refer to the example implementations in `examples/` for practical demonstrations.
 
 ## How to Use with Cursor
 
@@ -97,8 +108,8 @@ To effectively use this repository with Cursor AI:
 2. Add this repository as context by referencing it in your prompt:
 
 ```
-@filepath/to/advanced-vibe-coding-enterprise/documentation/Methodology.md
-@filepath/to/advanced-vibe-coding-enterprise/documentation/Prompt-Chain-Implementation.md
+@filepath/to/advanced-vibe-coding-enterprise/documentation/methodology.md
+@filepath/to/advanced-vibe-coding-enterprise/documentation/prompt-chain-implementation.md
 @filepath/to/advanced-vibe-coding-enterprise/templates/cursor-rules/global-rules.mdc
 ```
 
@@ -109,6 +120,31 @@ Based on the Advanced Vibe Coding methodology I've attached as context, help me 
 ```
 
 4. As you progress through different phases of development, reference specific sections of the methodology to maintain context.
+
+## Template Customization Guidelines
+
+To adapt the templates for your specific project needs:
+
+1. **Environment-Specific Rules**:
+   - Edit `.cursor/rules/environment.mdc` to specify your actual OS, shell, and language versions
+   - Update platform-specific commands in error handling rules
+
+2. **Project-Specific Rules**:
+   - Replace placeholder values in `templates/cursor-rules/project-specific-rules.mdc`
+   - Add technology-specific guidelines (React, Node.js, Terraform, etc.)
+   - Set appropriate glob patterns to target relevant files
+
+3. **Documentation Templates**:
+   - Add project-specific sections to implementation guides
+   - Customize architecture diagrams with your actual system components
+   - Extend templates with domain-specific requirements
+
+4. **Rules Evolution**:
+   - As your project grows, evolve your cursor rules following the guidance in `documentation/cursor-rules-evolution.md`
+   - Implement regular reviews and versioning of your rules
+   - Split rules into domain-specific files for larger projects
+
+Refer to the `examples/web-application-example/` directory for specific customization examples.
 
 ## Future Development Roadmap
 
@@ -144,11 +180,11 @@ This repository is a starting point for Advanced Vibe Coding for Enterprise. Fut
 
 ## Contributing
 
-Contributions to improve the Advanced Vibe Coding for Enterprise methodology are welcome! Please feel free to submit pull requests or open issues to discuss potential improvements.
+Contributions to improve the Advanced Vibe Coding for Enterprise methodology are welcome! Please refer to our [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute effectively.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 

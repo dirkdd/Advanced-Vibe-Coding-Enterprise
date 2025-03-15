@@ -1,3 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
 # Error Recovery Rules
 
 Description: Protocols for handling environment-related errors

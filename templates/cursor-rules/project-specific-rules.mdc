@@ -1,0 +1,50 @@
+---
+description: Specific rules for [frontend/backend/infrastructure] implementation
+globs: projects/[project-name]/**/*
+alwaysApply: false
+---
+# Project-Specific Rules: [Project Name]
+
+Description: Specific rules for [frontend/backend/infrastructure] implementation
+Globs: projects/[project-name]/**/*
+
+Body:
+  # How to use this template:
+  # 1. Replace [Project Name] in the header with your actual project name
+  # 2. Replace [frontend/backend/infrastructure] with your project type
+  # 3. Update the Globs pattern to match your project's folder structure
+  # 4. Replace all placeholder values in square brackets with your specific values
+  # 5. Add or remove sections based on your project's specific needs
+  
+  # Framework-specific guidelines
+  - Use [Framework] version [X.Y.Z] conventions and best practices
+  - Implement [Design Pattern] for component organization
+  - Follow the established folder structure for new features
+  - Ensure consistent state management using [State Management Pattern]
+  
+  # Testing requirements
+  - Maintain minimum 80% code coverage for business logic
+  - Include both unit and integration tests for API endpoints
+  - Mock external dependencies in tests
+  
+  # Error handling
+  - Implement centralized error handling for [specific component]
+  - Use custom error classes for domain-specific errors
+  - Include appropriate user-facing error messages
+  
+  # Performance guidelines
+  - Optimize resource-intensive operations
+  - Follow lazy loading patterns for [specific components]
+  - Implement caching for frequently accessed data
+
+# Documentation requirements
+  - Update implementation guides when modifying features
+  - Document all public APIs using standard format
+  - Keep architecture diagrams in sync with code changes
+
+# Related Templates
+- See `templates/cursor-rules/global-rules.mdc` for workspace-wide rules
+- See `.cursor/rules/environment.mdc` for environment-specific configurations
+- See `templates/documentation/implementation-guide-template.md` for feature implementation documentation
+- See `.cursor/rules/error-handling.mdc` for error recovery protocols
+

@@ -21,7 +21,7 @@ I'm starting a new enterprise project using Advanced Vibe Coding methodology. He
 ```
 Based on our environment configuration, help me create the root-level workspace structure with the following components:
 
-1. Generate a hierarchical folder structure with /projects, /shared-libraries, and /documentation roots
+1. Generate a hierarchical folder structure with projects, shared-libraries, and documentation roots
 2. Create a GitHub repository structure with appropriate branching strategy for our team size of [x] developers
 3. Set up consistent folder naming conventions using kebab-case
 4. Initialize Git at the workspace level with the appropriate configuration
@@ -30,11 +30,11 @@ Based on our environment configuration, help me create the root-level workspace 
 ### Prompt 1.3: Universal Cursor Rules
 
 ```
-Let's create universal Cursor rules that would apply to most projects by adapting the template at `/templates/cursor-rules/global-rules.mdc`:
+Let's create universal Cursor rules that would apply to most projects by adapting the template at `templates/cursor-rules/global-rules.mdc`:
 
 1. Generate a .cursor/rules.mdc file with basic code style and documentation guidelines
 2. Include universal error handling practices
-3. Add token optimization rules based on `/templates/cursor-rules/token-optimization.mdc`
+3. Add token optimization rules based on `templates/cursor-rules/token-optimization.mdc`
 4. Create model selection guidelines for different complexity tasks
 ```
 
@@ -95,7 +95,7 @@ Based on our root documentation, create templates for project-level documentatio
 ### Prompt 3.3: Project-Specific Cursor Rules
 
 ```
-Let's create specialized Cursor rules based on our technical choices, using the template at `/templates/cursor-rules/project-specific-rules.mdc`:
+Let's create specialized Cursor rules based on our technical choices, using the template at `templates/cursor-rules/project-specific-rules.mdc`:
 
 1. Framework-specific rules (React, Node.js, etc.)
 2. Project architecture patterns identified during discovery
@@ -108,12 +108,12 @@ Let's create specialized Cursor rules based on our technical choices, using the 
 ### Prompt 3.4: Documentation Hierarchy Setup
 
 ```
-Help me expand our documentation structure based on project requirements, using the templates in `/templates/documentation/`:
+Help me expand our documentation structure based on project requirements, using the templates in `templates/documentation/`:
 
 1. Enhanced README.md with project-specific sections
-2. Create ARCHITECTURE.md based on the `/templates/documentation/architecture-template.md` template
+2. Create ARCHITECTURE.md based on the `templates/documentation/architecture-template.md` template
 3. Set up API.md templates for our API documentation
-4. Create implementation guides using `/templates/documentation/implementation-guide-template.md`
+4. Create implementation guides using `templates/documentation/implementation-guide-template.md`
 5. Establish the full documentation folder structure
 ```
 
